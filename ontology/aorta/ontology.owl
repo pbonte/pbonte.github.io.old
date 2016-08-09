@@ -1,0 +1,1042 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#assignedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#assignedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#endLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#endLocation">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Location"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#executedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#executedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#forPatient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#forPatient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#hasErrorCode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#hasErrorCode">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ErrorCodes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#hasRole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#hasTransportType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#hasTransportType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#TransportType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#startLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#startLocation">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Location"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ArrivalTooLate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ArrivalTooLate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BeganTooLate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BeganTooLate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Day -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Day">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#DayPeriod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#DayPeriod">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#DurationLongerThanExpected -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#DurationLongerThanExpected">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#EndTaskTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#EndTaskTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#EndTransportTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#EndTransportTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#EstimatedTransportTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#EstimatedTransportTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ID">
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Performed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Performed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Priority -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Priority">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ScheduledTimeOfArrival -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ScheduledTimeOfArrival">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ScheduledTimeOfDeparture -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ScheduledTimeOfDeparture">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#StartTaskTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#StartTaskTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#StartTransportTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#StartTransportTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Status -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Status">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Weekday -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Weekday">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Bed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Bed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#TransportType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BedWithBedmover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BedWithBedmover">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Bed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BedWithMonitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BedWithMonitor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Bed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BedWithPatient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BedWithPatient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Bed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BuildingBlock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BuildingBlock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BusyWithWoundCare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BusyWithWoundCare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientNotReadyError"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ChangedTransportModeError -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ChangedTransportModeError">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ErrorCodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ChangedTransportModeToBed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ChangedTransportModeToBed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ChangedTransportModeError"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ChangedTransportModeToBedmover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ChangedTransportModeToBedmover">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ChangedTransportModeError"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ChangedTransportModeToWheelchair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ChangedTransportModeToWheelchair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ChangedTransportModeError"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ContrastFluidTransport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ContrastFluidTransport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#LogisticTransportTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Corridor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Corridor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Passage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Daystay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Daystay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#DoctorIsPresent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#DoctorIsPresent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientNotReadyError"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#DossierNotOK -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#DossierNotOK">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientNotReadyError"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Elevator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Elevator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Passage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ElevatorNotWorking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ElevatorNotWorking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ErrorCodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#EmptyBed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#EmptyBed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Bed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ErrorCodes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ErrorCodes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Floor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Floor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#GeriatricChair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#GeriatricChair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#TransportType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Hospital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Hospital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#InfusionNotOK -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#InfusionNotOK">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientNotReadyError"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#LogisticTransportTask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#LogisticTransportTask">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#TransportTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Man -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Man">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#NoIdentificationStrap -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#NoIdentificationStrap">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientNotReadyError"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Nurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Nurse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#StaffMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#OperatingTheater -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#OperatingTheater">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Passage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Passage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientIsAbsent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientIsAbsent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientNotReadyError"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientIsEating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientIsEating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientNotReadyError"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientIsNotFasting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientIsNotFasting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientNotReadyError"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientNotReadyError -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientNotReadyError">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ErrorCodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientRecalcitrate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientRecalcitrate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientNotReadyError"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientRetour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientRetour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ErrorCodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientStrapNotOK -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientStrapNotOK">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientNotReadyError"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientToToilet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientToToilet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientNotReadyError"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientTransportTask">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#TransportTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ReApplication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ReApplication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ErrorCodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ReApplication20Minutes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ReApplication20Minutes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ReApplication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ReApplication40Minutes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ReApplication40Minutes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ReApplication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ReApplications60Minutes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ReApplications60Minutes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ReApplication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#RequestForNurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#RequestForNurse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ErrorCodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Role"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Room -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Room">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#StaffMember -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#StaffMember">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Stairs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Stairs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Passage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Task"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#TransportTask -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#TransportTask">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#TransportType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#TransportType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#WaitingForNurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#WaitingForNurse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ErrorCodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Walking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Walking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#TransportType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Wheelchair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Wheelchair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#TransportType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Woman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Woman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#WrongRoomNumber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#WrongRoomNumber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ErrorCodes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Zone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Zone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BedWithBedmover -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BedWithBedmover">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BedWithBedmover"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BedWithMonitor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BedWithMonitor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BedWithMonitor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BedWithPatient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BedWithPatient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BedWithPatient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#EmptyBed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#EmptyBed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#EmptyBed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ChangedTransportModeToBed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#InfusionNotOK"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#NoIdentificationStrap"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientIsAbsent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientIsEating"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientIsNotFasting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientRecalcitrate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientStrapNotOK"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientToToilet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ReApplication20Minutes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ReApplication40Minutes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ChangedTransportModeToBedmover"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ReApplications60Minutes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#RequestForNurse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#WaitingForNurse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error23">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#WrongRoomNumber"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ChangedTransportModeToWheelchair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#ElevatorNotWorking"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientNotReadyError"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#PatientRetour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#BusyWithWoundCare"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#DoctorIsPresent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Error9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#DossierNotOK"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#GeriatricChair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#GeriatricChair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#GeriatricChair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Man -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Man">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Man"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Nurse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Nurse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Nurse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Patient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Patient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Patient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Walking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Walking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Walking"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Wheelchair -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Wheelchair">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Wheelchair"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Woman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Woman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eveline/ontologies/2015/11/untitled-ontology-2#Woman"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
