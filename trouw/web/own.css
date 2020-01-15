@@ -1,1 +1,8 @@
 .has-bg-img { background: url('fig/pc1.JPG')center center; background-size:cover; }
+
+@media (max-width: 1024px) {
+    .has-bg-img { background: url('fig/pc2.JPG')center center; background-size:cover; }
+}
+@media (max-width: 768px) {
+    .has-bg-img { background: url('fig/pc3.JPG')center center; background-size:cover; }
+}
