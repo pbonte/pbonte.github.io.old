@@ -3,17 +3,249 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Trouw Pieter en Charlotte</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <link rel="stylesheet" href="own.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
+
+<script>
+    var names = {
+        karlienreginald:"FAMD",
+        adelheidjoos:"FAMD",
+        ewoud :"FAMD",
+        liennico:"FAMD",
+        nelfabian:"FAMD",
+        hilda:"FAMD",
+        robert:"FAMD",
+        hectoraugusta:"FAMD",
+        lucien:"FAMD",
+        grietjejohan:"FAMV",
+        lissekarl:"FAMV",
+        elienkoen:"FAMV",
+        yanakarel:"FAMV",
+        donaldgriet:"FAMV",
+        marleenpatrick:"FAMV",
+        joyceroel:"FAMV",
+        gilleskaylee:"FAMV",
+        katrienpiet:"FAMV",
+        tinepieter:"FAMV",
+        ruth:"FAMV",
+        joannelies:"FAMV",
+        bavo:"FAMV",
+        sien:"FAMV",
+        stan:"FAMV",
+        gondapatrick:"FAMV",
+        jefkimberly:"FAMV",
+        geertbarbara:"FAMV",
+        dj:"FAMV",
+        alex:"FAMV",
+        marijkecarl:"FAMV",
+        sophiearon:"FR",
+        mathijslies:"FR",
+        michielgreet:"FR",
+        liridonaolsi:"FR",
+        natjenkapiet:"FR",
+        jokenicolas:"FR",
+        mariekejef:"FR",
+        clineniels:"FR",
+        gallebart:"FR",
+        damiennele:"FR",
+        daveelisa:"FR",
+        ralphdelfien:"FR",
+        sammichela:"FR",
+        stevenlisa:"FR",
+        karelliselotte:"FR",
+        jasperjulia:"FR",
+        erikevelyn:"FR",
+        ricardosimona:"FR"
+    };
+    var loggedIn=true;
+    function isLoggedIn(){
+        return loggedIn;
+    }
+    var beforeLogFunction=null;
+    function logout(){
+        loggedIn=false;
+        document.getElementById("loginID").innerText="Log in";
+    }
+    function login(){
+        var selected = document.getElementById("source").value;
+        var selectedCleaned=selected.replace(/\s+/g, '').replace(/[^A-Z0-9]/ig, "").toLowerCase();
+
+        if(selectedCleaned in names){
+            console.log(selected);
+            /*if (typeof(Storage) !== "undefined") {
+                // Code for localStorage/sessionStorage.
+                localStorage.name = selected;
+                localStorage.type = names[selectedCleaned];
+                closeLogin();
+            } else {
+                // Sorry! No Web Storage support..
+            }*/
+            if(names[selectedCleaned]=="FAMV"){
+                document.getElementById("attendURL").className="";
+                document.getElementById("attendURLFAM").className="is-hidden";
+            }else{
+                document.getElementById("attendURLFAM").className="";
+                document.getElementById("attendURL").className="is-hidden";
+            }
+            loggedIn=true;
+            document.getElementById("loginID").innerText="Log out";
+            closeLogin();
+            if(beforeLogFunction!=null){
+                beforeLogFunction();
+                beforeLogFunction=null;
+            }
+        }else{
+            console.log("unknown");
+        }
+    }
+    function openConfirm() {
+        if (isLoggedIn()) {
+            var NAME = document.getElementById("confirm")
+            NAME.className = "modal is-active"
+        }else{
+            beforeLogFunction=function(){openConfirm();};
+            openLogin();
+        }
+
+    }
+    function closeConfirm() {
+        var NAME = document.getElementById("confirm")
+        NAME.className="modal"
+    }
+    function openLogin() {
+        if (isLoggedIn()) {
+            logout();
+        } else {
+        var NAME = document.getElementById("login")
+        NAME.className = "modal is-active"
+        }
+    }
+    function closeLogin(){
+        var NAME = document.getElementById("login")
+        NAME.className="modal"
+    }
+    function openHome() {
+        var NAME = document.getElementById("home");
+        NAME.className="hero is-fullheight has-bg-img";
+        document.getElementById("info").className="tile is-hidden is-ancestor";
+        document.getElementById("cadeau").className="tile is-hidden is-ancestor";
+        document.getElementById("programma").className = "tile is-hidden is-ancestor";
+        document.getElementById("contact").className = "tile is-hidden is-ancestor";
+    }
+    function openInfo() {
+        if (isLoggedIn()) {
+            var NAME = document.getElementById("info");
+            NAME.className = "tile is-ancestor";
+            document.getElementById("home").className = "hero is-hidden is-fullheight has-bg-img";
+            document.getElementById("cadeau").className = "tile is-hidden is-ancestor";
+            document.getElementById("programma").className = "tile is-hidden is-ancestor";
+            document.getElementById("contact").className = "tile is-hidden is-ancestor";
+        }else{
+            beforeLogFunction=function(){openInfo();};
+            openLogin();
+        }
+
+    }
+    function openCadeau() {
+        if (isLoggedIn()) {
+            var NAME = document.getElementById("cadeau");
+            NAME.className = "tile is-ancestor";
+            document.getElementById("home").className = "hero is-hidden is-fullheight has-bg-img";
+            document.getElementById("info").className = "tile is-hidden is-ancestor";
+            document.getElementById("programma").className = "tile is-hidden is-ancestor";
+            document.getElementById("contact").className = "tile is-hidden is-ancestor";
+        }else{
+            beforeLogFunction=function(){openCadeau();};
+            openLogin();
+        }
+
+    }
+    function openProgramma() {
+        if (isLoggedIn()) {
+            var NAME = document.getElementById("programma");
+            NAME.className = "tile is-ancestor";
+            document.getElementById("home").className = "hero is-hidden is-fullheight has-bg-img";
+            document.getElementById("info").className = "tile is-hidden is-ancestor";
+            document.getElementById("cadeau").className = "tile is-hidden is-ancestor";
+            document.getElementById("contact").className = "tile is-hidden is-ancestor";
+        }else{
+            beforeLogFunction=function(){openProgramma();};
+            openLogin();
+        }
+
+    }
+    function openContact() {
+        if (isLoggedIn()) {
+            var NAME = document.getElementById("contact");
+            NAME.className = "tile is-ancestor";
+            document.getElementById("home").className = "hero is-hidden is-fullheight has-bg-img";
+            document.getElementById("info").className = "tile is-hidden is-ancestor";
+            document.getElementById("cadeau").className = "tile is-hidden is-ancestor";
+            document.getElementById("programma").className = "tile is-hidden is-ancestor";
+        }else{
+            beforeLogFunction=function(){openProgramma();};
+            openLogin();
+        }
+
+    }
+    function showParking(parkingId,parkings){
+        console.log(parkingId);
+        console.log(parkings);
+        for(parking in parkings){
+            console.log(parking)
+            document.getElementById(parkings[parking]).className = "is-hidden";
+            document.getElementById(parkings[parking]+"ID").className = "";
+        }
+        document.getElementById(parkingId).className="";
+        document.getElementById(parkingId+"ID").className="is-active";
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach( el => {
+                el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+        }
+
+    });
+    var userRole="none"
+    if (typeof(Storage) !== "undefined") {
+        // Code for localStorage/sessionStorage.
+        if (localStorage.userrole) {
+            userRole =localStorage.userrole;
+        }else{
+            localStorage.userrole="first";
+        }
+    } else {
+        // Sorry! No Web Storage support..
+    }
+    console.log(userRole);
+</script>
 <body>
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-    <!--<a class="navbar-item" href="https://bulma.io">
-            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-        </a>-->
+    <a class="navbar-item" href="index.html">
+            <img src="fig/rings.png" width="28" height="28">
+        </a>
 
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
@@ -24,15 +256,23 @@
 
     <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-            <a class="navbar-item">
+            <a class="navbar-item" onclick="openHome()">
                 Home
             </a>
 
-            <a class="navbar-item" href="info.html">
+            <a class="navbar-item" onclick="openInfo()">
                Informatie
             </a>
-
-            <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-item" onclick="openCadeau()">
+                Cadeautip
+            </a>
+            <a class="navbar-item" onclick="openProgramma()">
+               Programma
+            </a>
+            <a class="navbar-item" onclick="openContact()">
+               Contact
+            </a>
+            <!--<div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">
                     Meer
                 </a>
@@ -53,23 +293,125 @@
                        Stel een vraag
                     </a>
                 </div>
-            </div>
+            </div>-->
         </div>
 
         <div class="navbar-end">
             <div class="navbar-item">
-                <div class="buttons">
-                    <a class="button is-primary">
+                <div class="buttons" >
+                    <a class="button is-primary" onclick="openConfirm()">
                         <strong>Bevestig</strong>
                     </a>
-                    <!--<a class="button is-light">
+                    <a id="loginID" class="button is-light" onclick="openLogin()">
                         Log in
-                    </a>-->
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </nav>
+<div id="confirm" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Bevestig aanwezigheid</p>
+            <button class="delete" aria-label="close" onclick="closeConfirm();"></button>
+        </header>
+        <section class="modal-card-body">
+            <!-- Content ... -->
+            <div id="attendURL">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScnHM4qkyM2jvrUvwdU654CCCfzSiRRSugcTmLMGZl3GdGrSA/viewform?embedded=true" width="600" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+            <div class="is-hidden" id="attendURLFAM">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScw0aEl9RcoWbO6zdK_dap-qwLHOnhQjCaidqjD_VkKoD2bvQ/viewform?embedded=true" width="600" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+            </div>
+                <p>
+                Vergeet niet op <strong>Submit</strong> te klikken vooralleer je dit venster sluit. Enkel dan wordt bevestiging doorgestuurd.
+            </p>
+        </section>
+        <footer class="modal-card-foot">
+            <!--<button class="button is-success">Save changes</button>-->
+            <button class="button" onclick="closeConfirm();">Sluit venster</button>
+        </footer>
+    </div>
+</div>
+<div id="login" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Login</p>
+            <button class="delete" aria-label="close" onclick="closeLogin();"></button>
+        </header>
+        <section class="modal-card-body">
+            <!-- Content ... -->
+            <div>
+                <label for="source">Om aangepaste informatie te zien, selecteer je naam uit de lijst en klik hier onder op 'Login' :</label>
+            <p/>
+                <datalist id="sources">
+                    <select name="source">
+                        <option>Selecteer je naam...</option>
+                        <option>Karlien & Reginald</option>
+                        <option>Adelheid & Joos</option>
+                        <option>Ewoud </option>
+                        <option>Lien & Nico</option>
+                        <option>Nel & Fabian</option>
+                        <option>Hilda</option>
+                        <option>Robert</option>
+                        <option>Hector & Augusta</option>
+                        <option>Lucien</option>
+                        <option>Grietje & Johan</option>
+                        <option>Lisse & Karl</option>
+                        <option>Elien & Koen</option>
+                        <option>Yana & Karel</option>
+                        <option>Donald & Griet</option>
+                        <option>Marleen & Patrick</option>
+                        <option>Joyce & Roel</option>
+                        <option>Gilles & Kaylee</option>
+                        <option>Katrien & Piet</option>
+                        <option>Tine & Pieter</option>
+                        <option>Ruth</option>
+                        <option>Jo & Annelies</option>
+                        <option>Bavo</option>
+                        <option>Sien</option>
+                        <option>Stan</option>
+                        <option>Gonda & Patrick</option>
+                        <option>Jef & Kimberly</option>
+                        <option>Geert & Barbara</option>
+                        <option>DJ</option>
+                        <option>Alex</option>
+                        <option>Marijke & Carl</option>
+                        <option>Sophie & Aron</option>
+                        <option>Mathijs & Lies</option>
+                        <option>Michiel & Greet</option>
+                        <option>Liridona & Olsi</option>
+                        <option>Natjenka & Piet</option>
+                        <option>Joke & Nicolas</option>
+                        <option>Marieke & Jef</option>
+                        <option>Céline & Niels</option>
+                        <option>Gaëlle & Bart</option>
+                        <option>Damien & Nele</option>
+                        <option>Dave & Elisa</option>
+                        <option>Ralph & Delfien</option>
+                        <option>Sam & Michela</option>
+                        <option>Steven & Lisa</option>
+                        <option>Karel & Liselotte</option>
+                        <option>Jasper & Julia</option>
+                        <option>Erik & Evelyn</option>
+                        <option>Ricardo & Simona</option>
+                    </select>
+                    If other, please specify:
+                </datalist>
+                <input id="source" name="source" list="sources">
+
+            </div>
+        </section>
+        <footer class="modal-card-foot">
+            <button class="button is-success" onclick="login()">Login</button>
+            <button class="button" onclick="closeLogin();">Sluit venster</button>
+        </footer>
+    </div>
+</div>
 <!--<section class="section">
     <div class="container">
         <h1 class="title">
@@ -80,19 +422,214 @@
         </p>
     </div>
 </section>-->
-<section class="hero is-fullheight has-bg-img">
+<section id="home" class="hero is-fullheight has-bg-img">
     <div class="hero-body">
         <div class="container has-text-centered">
             <!--<h1 class="title">Title 1</h1>
             <h2 class="subtitle">Subtitle 3</h2>-->
         </div>
     </div> </section>
-<footer class="footer">
+<!--
+ Info tab
+-->
+<div id="info" class="tile is-hidden is-ancestor">
+    <div class="tile is-4 is-vertical is-parent">
+        <div class="tile is-child box">
+            <p class="title">Address</p>
+            WOEST Drongensesteenweg 41, 9000 Gent
+        </div>
+        <div class="tile is-child box">
+            <p class="title">Info</p>
+            <p>
+            Als echte aangespoelde West-Vlamingen, vonden we het belangrijk om te trouwen op een plek met betekenis. Gent is de plek waar we verliefd werden, dus aan liefde geen tekort, maar aan parkeerplekken jammer genoeg soms wel.
+            </p>
+            <p>
+              WOEST ligt binnen de Lage-EmissieZone (LEZ). Dit betekent dat enkel diesel voertuigen vanaf euro 5 en  benzine voertuigen vanaf euro 2 de LEZ binnen mogen.
+                Meer info omtrent de LEZ  kan je <a href="https://stad.gent/nl/mobiliteit-openbare-werken/lage-emissiezone-2020" >hier</a> vinden. Parking 4 ligt net buiten de LEZ.
+
+            </p>
+        </div>
+        <div class="tile is-child box">
+            <p class="title">Parking</p>
+            <div class="tabs">
+                <ul>
+                    <li id="parking1ID" class="is-active"><a onclick='showParking("parking1",["parking2","parking3","parking4"])'>Parking 1</a></li>
+                    <li id="parking2ID"><a onclick='showParking("parking2",["parking1","parking3","parking4"])'>Parking 2</a></li>
+                    <li id="parking3ID"><a onclick='showParking("parking3",["parking1","parking2","parking4"])'>Parking 3</a></li>
+                    <li id="parking4ID"><a onclick='showParking("parking4",["parking1","parking2","parking3"])'>Parking 4</a></lii>
+                </ul>
+            </div>
+            <div id="parking1">
+                <p>Afstand: 70m</p>
+                <p>Level: Easy</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d892.8075528449809!2d3.7009298256640633!3d51.05681657177283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDAzJzIzLjAiTiAzwrA0MicwNS44IkU!5e0!3m2!1sen!2sbe!4v1583614338250!5m2!1sen!2sbe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="is-hidden" id="parking2">
+                <p>Afstand: 300m</p>
+                <p>Level: Easy</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1253.897309203945!2d3.7027110310478175!3d51.056879998230826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDAzJzI0LjgiTiAzwrA0MicxMi4xIkU!5e0!3m2!1sen!2sbe!4v1583615674732!5m2!1sen!2sbe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="is-hidden" id="parking3">
+                <p>Afstand: 0m - ...</p>
+                <p>Level: Medium</p>
+                <p>Prijs: 3EUR/dag</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d626.9459194912305!2d3.6998478292680623!3d51.05708199872276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDAzJzI1LjUiTiAzwrA0MicwMS40IkU!5e0!3m2!1sen!2sbe!4v1583616041058!5m2!1sen!2sbe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="is-hidden" id="parking4">
+                <p>Afstand: 450m</p>
+                <p>Level: Easy</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d626.9748543311267!2d3.6973748292680546!3d51.05494499872273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDAzJzE3LjgiTiAzwrA0MSc1Mi41IkU!5e0!3m2!1sen!2sbe!4v1583616359408!5m2!1sen!2sbe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+
+        </div>
+    </div>
+    <div class="tile is-parent">
+        <div class="tile is-child box">
+            <p class="title">Map</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.7862516280434!2d3.6982370159576567!3d51.05703447956364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c37172dd4c04d9%3A0xf464477a1930703b!2sWOEST!5e0!3m2!1sen!2sbe!4v1579119279558!5m2!1sen!2sbe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+        </div>
+    </div>
+</div>
+
+<!--
+ Cadeau tab
+-->
+
+<div id="cadeau" class="tile is-hidden is-ancestor">
+    <div class="tile is-4 is-vertical is-parent">
+        <div class="tile is-child box">
+            <p class="title">Informatie</p>
+            <p>
+                We hebben gekozen om geen klassiek of groots trouwfeest te organiseren. We gaan voor een gezellig samenzijn om onze mijlpaal te vieren voor de andere mijlpaal eraan komt, met een drankje en wat tapas à la Woest (en een dessertbuffet, uiteraard). Zie het als een uitgebreide receptie. Dat betekent dan ook dat we geen grootse cadeaus verwachten, het samenzijn en jullie enthousiasme, daar doen we het voor.
+            </p><p>  We hebben ook de zon en mooi weer uitgenodigd, maar op de een kan je al meer rekenen dan op de ander. We zullen jullie zeker niet laten verkommeren in de kou, maar hou er dus wel rekening mee wat betreft outfit keuzes dat het voor een groot deel buiten te doen zal zijn, in de mate van het mogelijke.
+            </p>
+        </div>
+
+    </div>
+    <div class="tile is-4 is-vertical is-parent">
+        <div class="tile is-child box">
+            <p class="title">Cadeautip</p>
+            <p>
+                Voor de mensen die graag iets willen geven:</p>
+
+            <div class="content">
+                <ul>
+                    <li> <i class="far fa-envelope"></i> BE79 7350 5086 1633 </li>
+                </ul></div>
+            </p>
+
+        </div>
+
+    </div>
+
+
+</div>
+<!--
+Programma tab
+-->
+<div id="programma" class="tile is-hidden is-ancestor">
+    <div class="tile is-parent">
+        <article class="tile is-child box">
+            <p class="title">Ceremonie</p>
+            <p class="subtitle">15.30</p>
+            <figure class="image is-4by3">
+                <img src="fig/ceremonie.png">
+            </figure>
+        </article>
+    </div>
+    <div class="tile is-parent">
+        <article class="tile is-child box">
+            <p class="title">Receptie</p>
+            <p class="subtitle">16.30</p>
+            <figure class="image is-4by3">
+                <img src="fig/receptie.png">
+            </figure>
+        </article>
+    </div>
+    <div class="tile is-parent">
+        <article class="tile is-child box">
+            <p class="title">Tapas Buffet</p>
+            <p class="subtitle">18.00</p>
+            <figure class="image is-4by3">
+                <img src="fig/buffet.png">
+            </figure>
+        </article>
+    </div>
+    <div class="tile is-parent">
+        <article class="tile is-child box">
+            <p class="title">Dessert Buffet</p>
+            <p class="subtitle">20.00</p>
+            <figure class="image is-4by3">
+                <img src="fig/taart.png">
+            </figure>
+        </article>
+    </div>
+
+    <div class="tile is-parent">
+        <article class="tile is-child box">
+            <p class="title">Dansfeest</p>
+            <p class="subtitle">21.00</p>
+            <figure class="image  ">
+                <img src="fig/feest.png">
+            </figure>
+        </article>
+    </div>
+    <div class="tile is-parent">
+        <article class="tile is-child box">
+            <p class="title">Baby slaaptijd</p>
+            <p class="subtitle">01.00</p>
+            <figure class="image">
+                <img src="fig/slaap.png">
+            </figure>
+        </article>
+    </div>
+</div>
+<!----Contact -->
+<div id="contact" class="tile is-hidden is-ancestor">
+    <div class="tile is-4 is-vertical is-parent">
+        <div class="tile is-child box">
+            <p class="title">Pieter</p>
+            <p>
+                <i class="far fa-envelope"></i>: pieterbonte@gmail.com
+            </p>
+            <p>
+                <i class="fas fa-mobile-alt"></i>: +32476642916
+            </p>
+        </div>
+
+    </div>
+    <div class="tile is-4 is-vertical is-parent">
+        <div class="tile is-child box">
+            <p class="title">Charlotte</p>
+            <p>
+                <i class="far fa-envelope"></i>: charlottepylyser@hotmail.com
+            </p>
+            <p>
+                <i class="fas fa-mobile-alt"></i>: +32497782130
+            </p>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+    <footer class="footer">
     <div class="content has-text-centered">
         <p>
-           Op <strong>9 mei 2020</strong> geven Charlotte en Pieter elkaar het ja-woord. Herinneringen maak je niet alleen, daarom zouden we jullie er graag bijhebben.
+           Op <strong>9 mei 2020</strong> zeggen wij JA en starten we een nieuw hoofdstuk in ons verhaal. Omdat mijlpalen mooier zijn als je ze kan delen, hopen we dat jullie mee komen vieren.
+        </p>
+        <p>
+            Pieter & Charlotte
         </p>
     </div>
 </footer>
+
+<p class="is-size-7">Image and drawings by &copy; <a href="http://www.nelbonte.com"> Nel Bonte</a></p>
 </body>
+
 </html>
