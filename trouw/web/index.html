@@ -25,9 +25,9 @@
         elienkoen:"FAMV",
         yanakarel:"FAMV",
         donaldgriet:"FAMV",
-        marleenpatrick:"FAMV",
+        patrickmarleen:"FAMV",
         joyceroel:"FAMV",
-        gilleskaylee:"FAMV",
+        gilleskeely:"FAMV",
         katrienpiet:"FAMV",
         tinepieter:"FAMV",
         ruth:"FAMV",
@@ -60,46 +60,71 @@
         erikevelyn:"FR",
         ricardosimona:"FR"
     };
-    var loggedIn=true;
     function isLoggedIn(){
-        return loggedIn;
+        if (typeof(Storage) !== "undefined" && localStorage.name) {
+           return true;
+        }else{
+           return false;
+        }
+
     }
     var beforeLogFunction=null;
     function logout(){
-        loggedIn=false;
+        if (typeof(Storage) !== "undefined"){
+            localStorage.removeItem("name");
+        }
+
         document.getElementById("loginID").innerText="Log in";
     }
+    var selected=null;
     function login(){
-        var selected = document.getElementById("source").value;
+        selected = document.getElementById("source").value;
         var selectedCleaned=selected.replace(/\s+/g, '').replace(/[^A-Z0-9]/ig, "").toLowerCase();
 
         if(selectedCleaned in names){
             console.log(selected);
-            /*if (typeof(Storage) !== "undefined") {
+            if (typeof(Storage) !== "undefined") {
                 // Code for localStorage/sessionStorage.
                 localStorage.name = selected;
                 localStorage.type = names[selectedCleaned];
                 closeLogin();
             } else {
                 // Sorry! No Web Storage support..
-            }*/
-            if(names[selectedCleaned]=="FAMV"){
-                document.getElementById("attendURL").className="";
-                document.getElementById("attendURLFAM").className="is-hidden";
-            }else{
-                document.getElementById("attendURLFAM").className="";
-                document.getElementById("attendURL").className="is-hidden";
             }
-            loggedIn=true;
-            document.getElementById("loginID").innerText="Log out";
-            closeLogin();
-            if(beforeLogFunction!=null){
-                beforeLogFunction();
-                beforeLogFunction=null;
-            }
+            handleLogin();
         }else{
             console.log("unknown");
         }
+    }
+    function handleLogin() {
+
+        if (selected == null && typeof (Storage) !== "undefined") {
+            // Code for localStorage/sessionStorage.
+            selected = localStorage.name;
+        }
+        if (selected != null) {
+
+        var selectedCleaned = selected.replace(/\s+/g, '').replace(/[^A-Z0-9]/ig, "").toLowerCase();
+
+        if (names[selectedCleaned] == "FAMV") {
+            document.getElementById("attendURL").className = "";
+            document.getElementById("attendURLFAM").className = "is-hidden";
+            document.getElementById("ceremonieID").className = "is-hidden tile is-parent";
+            document.getElementById("parking5ID").className="";
+            showParking("parking5",["parking1","parking2","parking3","parking4"]);
+        } else {
+            document.getElementById("attendURLFAM").className = "";
+            document.getElementById("attendURL").className = "is-hidden";
+            document.getElementById("ceremonieID").className = "tile is-parent";
+            document.getElementById("parking5ID").className="is-hidden";
+        }
+        document.getElementById("loginID").innerText = "Log out";
+        closeLogin();
+        if (beforeLogFunction != null) {
+            beforeLogFunction();
+            beforeLogFunction = null;
+        }
+    }
     }
     function openConfirm() {
         if (isLoggedIn()) {
@@ -186,7 +211,7 @@
             document.getElementById("cadeau").className = "tile is-hidden is-ancestor";
             document.getElementById("programma").className = "tile is-hidden is-ancestor";
         }else{
-            beforeLogFunction=function(){openProgramma();};
+            beforeLogFunction=function(){openContact();};
             openLogin();
         }
 
@@ -239,6 +264,7 @@
         // Sorry! No Web Storage support..
     }
     console.log(userRole);
+    window.onload = handleLogin;
 </script>
 <body>
 <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -327,7 +353,7 @@
 
             </div>
                 <p>
-                Vergeet niet op <strong>Submit</strong> te klikken vooralleer je dit venster sluit. Enkel dan wordt bevestiging doorgestuurd.
+                Vergeet niet op <strong>Submit</strong> te klikken vooraleer je dit venster sluit. Enkel dan wordt bevestiging doorgestuurd.
             </p>
         </section>
         <footer class="modal-card-foot">
@@ -365,9 +391,9 @@
                         <option>Elien & Koen</option>
                         <option>Yana & Karel</option>
                         <option>Donald & Griet</option>
-                        <option>Marleen & Patrick</option>
+                        <option>Patrick & Marleen</option>
                         <option>Joyce & Roel</option>
-                        <option>Gilles & Kaylee</option>
+                        <option>Gilles & Keely</option>
                         <option>Katrien & Piet</option>
                         <option>Tine & Pieter</option>
                         <option>Ruth</option>
@@ -435,17 +461,18 @@
 <div id="info" class="tile is-hidden is-ancestor">
     <div class="tile is-4 is-vertical is-parent">
         <div class="tile is-child box">
-            <p class="title">Address</p>
+            <p class="title">Adres</p>
             WOEST Drongensesteenweg 41, 9000 Gent
         </div>
         <div class="tile is-child box">
             <p class="title">Info</p>
             <p>
-            Als echte aangespoelde West-Vlamingen, vonden we het belangrijk om te trouwen op een plek met betekenis. Gent is de plek waar we verliefd werden, dus aan liefde geen tekort, maar aan parkeerplekken jammer genoeg soms wel.
+            Als echte aangespoelde West-Vlamingen, vonden we het belangrijk om te trouwen op een plek met betekenis. Gent is de plek waar we verliefd werden, dus aan liefde geen tekort, maar aan parkeerplekken jammer genoeg soms wel. Tips, zie onderaan!
             </p>
+            <p><br/></p>
             <p>
-              WOEST ligt binnen de Lage-EmissieZone (LEZ). Dit betekent dat enkel diesel voertuigen vanaf euro 5 en  benzine voertuigen vanaf euro 2 de LEZ binnen mogen.
-                Meer info omtrent de LEZ  kan je <a href="https://stad.gent/nl/mobiliteit-openbare-werken/lage-emissiezone-2020" >hier</a> vinden. Parking 4 ligt net buiten de LEZ.
+              Bovendien ligt WOEST  binnen de Lage-EmissieZone (LEZ). Dit betekent dat enkel diesel voertuigen vanaf Euro 5 en  benzine voertuigen vanaf Euro 2 de LEZ binnen mogen.
+                Meer info omtrent de LEZ  kan je <a href="https://stad.gent/nl/mobiliteit-openbare-werken/lage-emissiezone-2020" >hier</a> vinden. Kom je hierdoor in de problemen? Geen paniek, Parking 4 biedt de oplossing want deze ligt net buiten de LEZ.
 
             </p>
         </div>
@@ -453,41 +480,78 @@
             <p class="title">Parking</p>
             <div class="tabs">
                 <ul>
-                    <li id="parking1ID" class="is-active"><a onclick='showParking("parking1",["parking2","parking3","parking4"])'>Parking 1</a></li>
-                    <li id="parking2ID"><a onclick='showParking("parking2",["parking1","parking3","parking4"])'>Parking 2</a></li>
-                    <li id="parking3ID"><a onclick='showParking("parking3",["parking1","parking2","parking4"])'>Parking 3</a></li>
-                    <li id="parking4ID"><a onclick='showParking("parking4",["parking1","parking2","parking3"])'>Parking 4</a></lii>
+                    <li id="parking1ID" class="is-active"><a onclick='showParking("parking1",["parking2","parking3","parking4","parking5"])'>P1</a></li>
+                    <li id="parking2ID"><a onclick='showParking("parking2",["parking1","parking3","parking4","parking5"])'>P2</a></li>
+                    <li id="parking3ID"><a onclick='showParking("parking3",["parking1","parking2","parking4","parking5"])'>P3</a></li>
+                    <li id="parking4ID"><a onclick='showParking("parking4",["parking1","parking2","parking3","parking5"])'>P4</a></li>
+                    <li class="is-hidden" id="parking5ID"><a onclick='showParking("parking5",["parking1","parking2","parking3","parking4"])'>P5</a></li>
                 </ul>
             </div>
             <div id="parking1">
+                <p><strong>Parking 1:</strong> achterkant WOEST, parking appartementsblok</p>
                 <p>Afstand: 70m</p>
                 <p>Level: Easy</p>
+                <p>LEZ: Ja</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d892.8075528449809!2d3.7009298256640633!3d51.05681657177283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDAzJzIzLjAiTiAzwrA0MicwNS44IkU!5e0!3m2!1sen!2sbe!4v1583614338250!5m2!1sen!2sbe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
             <div class="is-hidden" id="parking2">
+                <p><strong>Parking 2:</strong> achterkant WOEST, parking appartementsblok (iets verder) </p>
                 <p>Afstand: 300m</p>
                 <p>Level: Easy</p>
+                <p>LEZ: Ja</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1253.897309203945!2d3.7027110310478175!3d51.056879998230826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDAzJzI0LjgiTiAzwrA0MicxMi4xIkU!5e0!3m2!1sen!2sbe!4v1583615674732!5m2!1sen!2sbe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
             <div class="is-hidden" id="parking3">
+                <p><strong>Parking 3:</strong> voorkant WOEST, parking in de straat</p>
                 <p>Afstand: 0m - ...</p>
                 <p>Level: Medium</p>
-                <p>Prijs: 3EUR/dag</p>
+                <p>LEZ: Ja</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d626.9459194912305!2d3.6998478292680623!3d51.05708199872276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDAzJzI1LjUiTiAzwrA0MicwMS40IkU!5e0!3m2!1sen!2sbe!4v1583616041058!5m2!1sen!2sbe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
             <div class="is-hidden" id="parking4">
+                <p><strong>Parking 4:</strong> onafgesloten parking winkelcomplex</p>
                 <p>Afstand: 450m</p>
                 <p>Level: Easy</p>
+                <p>LEZ: Nee</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d626.9748543311267!2d3.6973748292680546!3d51.05494499872273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDAzJzE3LjgiTiAzwrA0MSc1Mi41IkU!5e0!3m2!1sen!2sbe!4v1583616359408!5m2!1sen!2sbe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="is-hidden" id="parking5">
+                <p><strong>Parking 5:</strong> prive parking WOEST (WATT Factory), ingang achteraan</p>
+                <p>Afstand: 0m</p>
+                <p>Level: Easy</p>
+                <p>LEZ: Ja</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d626.9539622998092!2d3.7008688292519727!3d51.05648799872273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDAzJzIzLjQiTiAzwrA0MicwNS4xIkU!5e0!3m2!1sen!2sbe!4v1584046050012!5m2!1sen!2sbe" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
 
         </div>
     </div>
-    <div class="tile is-parent">
+    <div class="tile  is-vertical is-parent">
         <div class="tile is-child box">
-            <p class="title">Map</p>
+            <p class="title">Kaart</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.7862516280434!2d3.6982370159576567!3d51.05703447956364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c37172dd4c04d9%3A0xf464477a1930703b!2sWOEST!5e0!3m2!1sen!2sbe!4v1579119279558!5m2!1sen!2sbe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
+        </div>
+        <div class="tile is-child box">
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child">
+                        <p class="title">Voorkant WOEST</p>
+                        <p>De hoofdingang bevindt zich in Drongensesteenweg 41.</p>
+                        <figure class="image is-4by3">
+                            <img src="fig/back.png">
+                        </figure>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child ">
+                        <p class="title">Achterkant WOEST</p>
+                        <p>Via de Vlasgaardstraat, kan je langs de achterkant ook binnen.</p>
+                        <figure class="image is-4by3">
+                            <img src="fig/front.png">
+                        </figure>
+                    </article>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -502,7 +566,7 @@
             <p class="title">Informatie</p>
             <p>
                 We hebben gekozen om geen klassiek of groots trouwfeest te organiseren. We gaan voor een gezellig samenzijn om onze mijlpaal te vieren voor de andere mijlpaal eraan komt, met een drankje en wat tapas à la Woest (en een dessertbuffet, uiteraard). Zie het als een uitgebreide receptie. Dat betekent dan ook dat we geen grootse cadeaus verwachten, het samenzijn en jullie enthousiasme, daar doen we het voor.
-            </p><p>  We hebben ook de zon en mooi weer uitgenodigd, maar op de een kan je al meer rekenen dan op de ander. We zullen jullie zeker niet laten verkommeren in de kou, maar hou er dus wel rekening mee wat betreft outfit keuzes dat het voor een groot deel buiten te doen zal zijn, in de mate van het mogelijke.
+            </p><br/><p>  We hebben ook de zon en mooi weer uitgenodigd, maar op de een kan je al meer rekenen dan op de ander. We zullen jullie zeker niet laten verkommeren in de kou, maar hou er dus wel rekening mee wat betreft outfit keuzes dat het voor een groot deel buiten te doen zal zijn, in de mate van het mogelijke.
             </p>
         </div>
 
@@ -511,7 +575,7 @@
         <div class="tile is-child box">
             <p class="title">Cadeautip</p>
             <p>
-                Voor de mensen die graag iets willen geven:</p>
+                Voor de mensen die toch graag iets willen geven:</p>
 
             <div class="content">
                 <ul>
@@ -529,7 +593,7 @@
 Programma tab
 -->
 <div id="programma" class="tile is-hidden is-ancestor">
-    <div class="tile is-parent">
+    <div id="ceremonieID" class="tile is-parent">
         <article class="tile is-child box">
             <p class="title">Ceremonie</p>
             <p class="subtitle">15.30</p>
