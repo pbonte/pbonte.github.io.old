@@ -224,6 +224,11 @@
             document.getElementById(parkings[parking]).className = "is-hidden";
             document.getElementById(parkings[parking]+"ID").className = "";
         }
+        var selectedCleaned = selected.replace(/\s+/g, '').replace(/[^A-Z0-9]/ig, "").toLowerCase();
+
+        if (names[selectedCleaned] != "FAMV") {
+            document.getElementById("parking5ID").className = "is-hidden";
+        }
         document.getElementById(parkingId).className="";
         document.getElementById(parkingId+"ID").className="is-active";
     }
