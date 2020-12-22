@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | Academic</title>
+    <link>http://pbonte.github.io/web/publication-type/2/</link>
+      <atom:link href="http://pbonte.github.io/web/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://pbonte.github.io/web/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>2</title>
+      <link>http://pbonte.github.io/web/publication-type/2/</link>
+    </image>
+    
+    <item>
+      <title>Semantics-based platform for context-aware and personalized robot interaction in the internet of robotic things</title>
+      <link>http://pbonte.github.io/web/publication/8603541/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://pbonte.github.io/web/publication/8603541/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Subset reasoning for event-based systems</title>
+      <link>http://pbonte.github.io/web/publication/8627930/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://pbonte.github.io/web/publication/8627930/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards optimizing hospital patient transports by automatically identifying interpretable causes of delays</title>
+      <link>http://pbonte.github.io/web/publication/8623325/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://pbonte.github.io/web/publication/8623325/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sharing health data in Belgium : a home care case study using the Vitalink platform</title>
+      <link>http://pbonte.github.io/web/publication/8550825/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://pbonte.github.io/web/publication/8550825/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Streaming MASSIF : cascading reasoning for efficient processing of iot data streams</title>
+      <link>http://pbonte.github.io/web/publication/8586329/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://pbonte.github.io/web/publication/8586329/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards a cascading reasoning framework to support responsive ambient-intelligent healthcare interventions</title>
+      <link>http://pbonte.github.io/web/publication/8581923/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>http://pbonte.github.io/web/publication/8581923/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The MASSIF platform : a modular and semantic platform for the development of flexible IoT services</title>
+      <link>http://pbonte.github.io/web/publication/8533438/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://pbonte.github.io/web/publication/8533438/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The OCarePlatform : a context-aware system to support independent living</title>
+      <link>http://pbonte.github.io/web/publication/8541182/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://pbonte.github.io/web/publication/8541182/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enhancement on Trial: an interactive and case-based debate on the ethics of human enhancement: report from the 11th IAB World Congress of Bioethics</title>
+      <link>http://pbonte.github.io/web/publication/3143619/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://pbonte.github.io/web/publication/3143619/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards a social and context-aware multi-sensor fall detection and risk assessment platform</title>
+      <link>http://pbonte.github.io/web/publication/7235308/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://pbonte.github.io/web/publication/7235308/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Is there a moral obligation to conceive children under the best possible conditions? A preliminary framework for identifying the preconception responsibilities of ‘potential parents’</title>
+      <link>http://pbonte.github.io/web/publication/4233327/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>http://pbonte.github.io/web/publication/4233327/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>May the blessed Man win: a critique of the categorical preference for natural talent over doping as proper origins of athletic ability</title>
+      <link>http://pbonte.github.io/web/publication/4233795/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>http://pbonte.github.io/web/publication/4233795/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
