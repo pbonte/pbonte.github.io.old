@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>&#34;STREAMS&#34; | Academic</title>
+    <link>/tag/streams/</link>
+      <atom:link href="/tag/streams/index.xml" rel="self" type="application/rss+xml" />
+    <description>&#34;STREAMS&#34;</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>&#34;STREAMS&#34;</title>
+      <link>/tag/streams/</link>
+    </image>
+    
+    <item>
+      <title>Subset reasoning for event-based systems</title>
+      <link>/publication/8627930/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/8627930/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards a cascading reasoning framework to support responsive ambient-intelligent healthcare interventions</title>
+      <link>/publication/8581923/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/8581923/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

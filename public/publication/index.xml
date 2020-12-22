@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | Academic</title>
+    <link>/publication/</link>
+      <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Publications</title>
+      <link>/publication/</link>
+    </image>
+    
+    <item>
+      <title>Conditional constraints for knowledge graph embeddings</title>
+      <link>/publication/8675058/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/8675058/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Context-aware route planning : a personalized and situation-aware multi-modal transport routing approach</title>
+      <link>/publication/8681056/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/8681056/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distributed continuous home care provisioning through personalized monitoring &amp; treatment planning</title>
+      <link>/publication/8665815/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/8665815/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RDF Stream processing prototyping with streaming MASSIF</title>
+      <link>/publication/8681059/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/8681059/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C-Sprite : efficient hierarchical reasoning for rapid RDF stream processing</title>
+      <link>/publication/8635009/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/8635009/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DIVIDE : adaptive context-aware query derivation for IoT data streams</title>
+      <link>/publication/8665820/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/8665820/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficiënte verwerking van heterogene IoT-data aan de hand van expressieve redeneertechnieken</title>
+      <link>/publication/8612860/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/8612860/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Semantics-based platform for context-aware and personalized robot interaction in the internet of robotic things</title>
+      <link>/publication/8603541/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/8603541/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Subset reasoning for event-based systems</title>
+      <link>/publication/8627930/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/8627930/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards optimizing hospital patient transports by automatically identifying interpretable causes of delays</title>
+      <link>/publication/8623325/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/8623325/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A query model for ontology-based event processing over RDF streams</title>
+      <link>/publication/8581984/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/8581984/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Context-aware patient monitoring through sensor streams</title>
+      <link>/publication/8577848/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/8577848/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SENSdesc : connect sensor queries and context</title>
+      <link>/publication/8552458/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/8552458/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sharing health data in Belgium : a home care case study using the Vitalink platform</title>
+      <link>/publication/8550825/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/8550825/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Streaming MASSIF : cascading reasoning for efficient processing of iot data streams</title>
+      <link>/publication/8586329/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/8586329/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards a cascading reasoning framework to support responsive ambient-intelligent healthcare interventions</title>
+      <link>/publication/8581923/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/8581923/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Context-aware and self-learning dynamic transport scheduling in hospitals</title>
+      <link>/publication/8541544/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/8541544/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The MASSIF platform : a modular and semantic platform for the development of flexible IoT services</title>
+      <link>/publication/8533438/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/8533438/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The OCarePlatform : a context-aware system to support independent living</title>
+      <link>/publication/8541182/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/8541182/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards ontology based event processing</title>
+      <link>/publication/8506060/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/8506060/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generic semantic platform for the user-friendly development of intelligent IoT services</title>
+      <link>/publication/8506056/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/8506056/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improving OWL RL reasoning in N3 by using specialized rules</title>
+      <link>/publication/8503498/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/8503498/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning semantic rules for intelligent transport scheduling in hospitals</title>
+      <link>/publication/8505900/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/8505900/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mining semantic rules for optimizing transport assignments in hospitals</title>
+      <link>/publication/8506052/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/8506052/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Semantic context consolidation and rule learning for optimized transport assignments in hospitals</title>
+      <link>/publication/8500134/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/8500134/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>User-friendly and scalable platform for the design of intelligent IoT services : a smart office use case</title>
+      <link>/publication/8506046/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/8506046/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enhancement on Trial: an interactive and case-based debate on the ethics of human enhancement: report from the 11th IAB World Congress of Bioethics</title>
+      <link>/publication/3143619/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/3143619/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evaluation and optimized usage of OWL 2 reasoners in an event-based eHealth context</title>
+      <link>/publication/6990308/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/6990308/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Event-driven rule-based reasoning using EYE</title>
+      <link>/publication/7033546/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/7033546/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Freedom in the flesh : physically shaping oneself and one&#39;s future children : an ethical-existential critique</title>
+      <link>/publication/8507140/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/8507140/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ontology reasoning using rules in an eHealth context</title>
+      <link>/publication/7034224/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/7034224/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Semantic intelligence for real-time automated media production</title>
+      <link>/publication/7237124/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/7237124/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards a social and context-aware multi-sensor fall detection and risk assessment platform</title>
+      <link>/publication/7235308/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/7235308/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Is there a moral obligation to conceive children under the best possible conditions? A preliminary framework for identifying the preconception responsibilities of ‘potential parents’</title>
+      <link>/publication/4233327/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/4233327/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>May the blessed Man win: a critique of the categorical preference for natural talent over doping as proper origins of athletic ability</title>
+      <link>/publication/4233795/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/4233795/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OCareClouds: improving home care by interconnecting elderly, care networks and their living environments</title>
+      <link>/publication/5660331/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/5660331/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
