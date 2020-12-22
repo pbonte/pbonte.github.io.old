@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>&#34;DYNAMIC TRANSPORTATION&#34; | Academic</title>
-    <link>/tag/dynamic-transportation/</link>
-      <atom:link href="/tag/dynamic-transportation/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://pbonte.github.io/tag/dynamic-transportation/</link>
+      <atom:link href="http://pbonte.github.io/tag/dynamic-transportation/index.xml" rel="self" type="application/rss+xml" />
     <description>&#34;DYNAMIC TRANSPORTATION&#34;</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>http://pbonte.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>&#34;DYNAMIC TRANSPORTATION&#34;</title>
-      <link>/tag/dynamic-transportation/</link>
+      <link>http://pbonte.github.io/tag/dynamic-transportation/</link>
     </image>
     
     <item>
       <title>Towards optimizing hospital patient transports by automatically identifying interpretable causes of delays</title>
-      <link>/publication/8623325/</link>
+      <link>http://pbonte.github.io/publication/8623325/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/8623325/</guid>
+      <guid>http://pbonte.github.io/publication/8623325/</guid>
       <description></description>
     </item>
     

@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>&#34;MANAGEMENT&#34; | Academic</title>
-    <link>/tag/management/</link>
-      <atom:link href="/tag/management/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://pbonte.github.io/tag/management/</link>
+      <atom:link href="http://pbonte.github.io/tag/management/index.xml" rel="self" type="application/rss+xml" />
     <description>&#34;MANAGEMENT&#34;</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>http://pbonte.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>&#34;MANAGEMENT&#34;</title>
-      <link>/tag/management/</link>
+      <link>http://pbonte.github.io/tag/management/</link>
     </image>
     
     <item>
       <title>Semantics-based platform for context-aware and personalized robot interaction in the internet of robotic things</title>
-      <link>/publication/8603541/</link>
+      <link>http://pbonte.github.io/publication/8603541/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/8603541/</guid>
+      <guid>http://pbonte.github.io/publication/8603541/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Towards a cascading reasoning framework to support responsive ambient-intelligent healthcare interventions</title>
-      <link>/publication/8581923/</link>
+      <link>http://pbonte.github.io/publication/8581923/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/8581923/</guid>
+      <guid>http://pbonte.github.io/publication/8581923/</guid>
       <description></description>
     </item>
     

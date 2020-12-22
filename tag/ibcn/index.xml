@@ -2,149 +2,149 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>&#34;IBCN&#34; | Academic</title>
-    <link>/tag/ibcn/</link>
-      <atom:link href="/tag/ibcn/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://pbonte.github.io/tag/ibcn/</link>
+      <atom:link href="http://pbonte.github.io/tag/ibcn/index.xml" rel="self" type="application/rss+xml" />
     <description>&#34;IBCN&#34;</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>http://pbonte.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>&#34;IBCN&#34;</title>
-      <link>/tag/ibcn/</link>
+      <link>http://pbonte.github.io/tag/ibcn/</link>
     </image>
     
     <item>
       <title>SENSdesc : connect sensor queries and context</title>
-      <link>/publication/8552458/</link>
+      <link>http://pbonte.github.io/publication/8552458/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/8552458/</guid>
+      <guid>http://pbonte.github.io/publication/8552458/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sharing health data in Belgium : a home care case study using the Vitalink platform</title>
-      <link>/publication/8550825/</link>
+      <link>http://pbonte.github.io/publication/8550825/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/publication/8550825/</guid>
+      <guid>http://pbonte.github.io/publication/8550825/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Context-aware and self-learning dynamic transport scheduling in hospitals</title>
-      <link>/publication/8541544/</link>
+      <link>http://pbonte.github.io/publication/8541544/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/8541544/</guid>
+      <guid>http://pbonte.github.io/publication/8541544/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The MASSIF platform : a modular and semantic platform for the development of flexible IoT services</title>
-      <link>/publication/8533438/</link>
+      <link>http://pbonte.github.io/publication/8533438/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/8533438/</guid>
+      <guid>http://pbonte.github.io/publication/8533438/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The OCarePlatform : a context-aware system to support independent living</title>
-      <link>/publication/8541182/</link>
+      <link>http://pbonte.github.io/publication/8541182/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/8541182/</guid>
+      <guid>http://pbonte.github.io/publication/8541182/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Towards ontology based event processing</title>
-      <link>/publication/8506060/</link>
+      <link>http://pbonte.github.io/publication/8506060/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>/publication/8506060/</guid>
+      <guid>http://pbonte.github.io/publication/8506060/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Generic semantic platform for the user-friendly development of intelligent IoT services</title>
-      <link>/publication/8506056/</link>
+      <link>http://pbonte.github.io/publication/8506056/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/8506056/</guid>
+      <guid>http://pbonte.github.io/publication/8506056/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Improving OWL RL reasoning in N3 by using specialized rules</title>
-      <link>/publication/8503498/</link>
+      <link>http://pbonte.github.io/publication/8503498/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/8503498/</guid>
+      <guid>http://pbonte.github.io/publication/8503498/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Learning semantic rules for intelligent transport scheduling in hospitals</title>
-      <link>/publication/8505900/</link>
+      <link>http://pbonte.github.io/publication/8505900/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/8505900/</guid>
+      <guid>http://pbonte.github.io/publication/8505900/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mining semantic rules for optimizing transport assignments in hospitals</title>
-      <link>/publication/8506052/</link>
+      <link>http://pbonte.github.io/publication/8506052/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/8506052/</guid>
+      <guid>http://pbonte.github.io/publication/8506052/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Semantic context consolidation and rule learning for optimized transport assignments in hospitals</title>
-      <link>/publication/8500134/</link>
+      <link>http://pbonte.github.io/publication/8500134/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/8500134/</guid>
+      <guid>http://pbonte.github.io/publication/8500134/</guid>
       <description></description>
     </item>
     
     <item>
       <title>User-friendly and scalable platform for the design of intelligent IoT services : a smart office use case</title>
-      <link>/publication/8506046/</link>
+      <link>http://pbonte.github.io/publication/8506046/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>/publication/8506046/</guid>
+      <guid>http://pbonte.github.io/publication/8506046/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Evaluation and optimized usage of OWL 2 reasoners in an event-based eHealth context</title>
-      <link>/publication/6990308/</link>
+      <link>http://pbonte.github.io/publication/6990308/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/6990308/</guid>
+      <guid>http://pbonte.github.io/publication/6990308/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ontology reasoning using rules in an eHealth context</title>
-      <link>/publication/7034224/</link>
+      <link>http://pbonte.github.io/publication/7034224/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/7034224/</guid>
+      <guid>http://pbonte.github.io/publication/7034224/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Semantic intelligence for real-time automated media production</title>
-      <link>/publication/7237124/</link>
+      <link>http://pbonte.github.io/publication/7237124/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/7237124/</guid>
+      <guid>http://pbonte.github.io/publication/7237124/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Towards a social and context-aware multi-sensor fall detection and risk assessment platform</title>
-      <link>/publication/7235308/</link>
+      <link>http://pbonte.github.io/publication/7235308/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/7235308/</guid>
+      <guid>http://pbonte.github.io/publication/7235308/</guid>
       <description></description>
     </item>
     
     <item>
       <title>OCareClouds: improving home care by interconnecting elderly, care networks and their living environments</title>
-      <link>/publication/5660331/</link>
+      <link>http://pbonte.github.io/publication/5660331/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/5660331/</guid>
+      <guid>http://pbonte.github.io/publication/5660331/</guid>
       <description></description>
     </item>
     
